@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage One Task</title>
+    <link rel="stylesheet" href="stageonetask.css">
+</head>
+<body>
+    <h1 data-testid="slackUserName">Omadi Naomi</h1>
+    <img src="/images/passport.png" alt="Omadi Naomi" data-testid="slackDisplayImage">
+    <p data-testid="currentDayOfTheWeek">Friday</p>
+    <p>UTC Time (ms):</p><p id="UTCtime" data-testid="currentUTCTime"></p>
+    <p data-testid="myTrack">Track: Frontend Development</p>
+    <a data-testid="githubURL" href="https://github.com/Jewel-Naomi/intro.git" target="_blank"><img src="/images/github-mark/github-mark/github-mark.png" alt="GitHub icon">MyRepository</a>
+
+
+    <script>
+        let ms = Date.UTC(2023, 09, 08);
+        document.getElementById("UTCtime").innerHTML = ms;
+        </script>
+</body>
+</html>
